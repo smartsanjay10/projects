@@ -1,5 +1,5 @@
 -- Employee Management System Sample Data
-
+use company;
 INSERT INTO departments VALUES
 (1, 'IT'),
 (2, 'HR'),

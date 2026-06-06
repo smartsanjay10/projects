@@ -1,10 +1,10 @@
 create database company;
 use company;
 
-create table department (
+create table departments (
              department_id int primary key,
-             department_name varchar(30) NOT NULL ,
-);
+             department_name varchar(30) NOT NULL 
+                        );
  
 create table employees (
              employee_id int primary key ,
@@ -13,6 +13,6 @@ create table employees (
              salary int NOT NULL,
              hire_date date ,
              department_id int,
-             FOREIGN KEY (department_id) references department(department_id)
+             FOREIGN KEY (department_id) references departments(department_id)
 );
 
